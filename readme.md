@@ -1,4 +1,4 @@
-## Datacord
+# Datacord
 
 [![npm version](https://img.shields.io/npm/v/datacord.svg?style=flat-square)](https://www.npmjs.org/package/datacord)
 [![npm downloads](https://img.shields.io/npm/dm/datacord.svg?style=flat-square)](https://npmjs.com/datacord)
