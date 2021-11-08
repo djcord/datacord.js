@@ -15,7 +15,7 @@ Promise based [Datacord](https://datacord.js.org) API wrapper for the browser an
 
 ## Install
 ### npmjs
-```
+```bash
 npm i datacord@latest
 ```
 ### jsDelivr CDN:
