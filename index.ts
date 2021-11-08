@@ -1,7 +1,7 @@
-const axios = require('axios');
+if(!isBrowser() && !axios){ var axios = require('axios') }
 class Datacord {
   options: any;
-  noDuplicate: any;
+  noDuplicate: any; 
   version: String;
   databaseURI: string;
   autoOverride: any;
@@ -60,6 +60,12 @@ class Datacord {
      throw new Error(`APIError: ${e.message}`)
    }
   }
+}
+
+function isBrowser() {
+    if(process && global) return false;
+    if(window && document)return true;
+    return false;
 }
 
 module.exports = Datacord;
