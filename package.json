@@ -4,10 +4,25 @@
   "description": "Datahook API Wrapper",
   "main": "index.js",
   "scripts": {},
+  "keywords": [
+    "database",
+    "datahook",
+    "datacord",
+    "node"
+  ],
   "author": "Joe Lee <tojoeleeofficial@gmail.com>",
   "license": "Apache-2.0",
-  "jsdelivr": "datacord.min.js",
-  "unpkg": "datacord.min.js",
+  "jsdelivr": "./index.js",
+  "unpkg": "./index.js",
+  "typings": "./index.d.ts",
+  "bugs": {
+    "url": "https://github.com/djcord/datacord.js/issues"
+  },
+  "homepage": "https://datacord.js.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djcord/datacord.js.git"
+  },
   "dependencies": {
     "axios": "^0.24.0"
   },
