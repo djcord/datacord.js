@@ -1,0 +1,17 @@
+{
+  "name": "datacord",
+  "version": "0.1.0",
+  "description": "Datahook API Wrapper",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Joe Lee <tojoeleeofficial@gmail.com>",
+  "license": "Apache-2.0",
+  "jsdelivr": "datacord.min.js",
+  "unpkg": "datacord.min.js",
+  "dependencies": {
+    "axios": "^0.24.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}
