@@ -5,7 +5,7 @@
 
 Promise based [Datacord](https://datacord.js.org) API wrapper for the browser and [node.js](https://nodejs.org)
 
-### Information
+## Information
 - Uses [axios](https://www.npmjs.com/package/axios) to make http-requests
 - Performant
 - 100% coverage of the Datahook API
@@ -13,16 +13,16 @@ Promise based [Datacord](https://datacord.js.org) API wrapper for the browser an
 - Check out the [documentation](https://datacord.js.org/docs)
 - Get an [API key](https://datacord.js.org/)
 
-### Install
-#### npmjs
+## Install
+### npmjs
 ```
 npm i datacord@latest
 ```
-#### jsDelivr CDN:
+### jsDelivr CDN:
 ```html
 <script src="https://cdn.jsdelivr.net/npm/datacord/datacord.min.js"></script>
 ```
-#### unpkg CDN:
+### unpkg CDN:
 
 ```html
 <script src="https://unpkg.com/datacord/datacord.min.js"></script>
