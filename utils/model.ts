@@ -82,11 +82,7 @@ class Model extends Client {
       }catch(e) {
           throw new Error('This model does not exist');
       }
-    }
-
-
-
-    
+    }    
 }
 
 module.exports = Model;
