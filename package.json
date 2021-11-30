@@ -1,9 +1,11 @@
 {
   "name": "datacord",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "Datahook API Wrapper",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "tsc"
+  },
   "keywords": [
     "database",
     "datahook",

@@ -1,4 +1,5 @@
 if(!isBrowser() && !axios){ var axios = require('axios') }
+
 class Datacord {
   options: any;
   noDuplicate: any; 
@@ -6,7 +7,7 @@ class Datacord {
   databaseURI: string;
   autoOverride: any;
   constructor(options) {
-    if(typeof options != 'string' && typeof options?.token != 'string')throw new Error('Please provide a token');
+   if(typeof options != 'string' && typeof options?.token != 'string')throw new Error('Please provide a token');
     if(options?.noDuplicate && typeof options?.noDuplicate != 'boolean')throw new Error('option:noDuplicate must be a boolean'); 
     if(options?.autoOverride && typeof options?.autoOverride != 'boolean')throw new Error('option:autoOverride must be a boolean');
      this.options = options;
@@ -26,6 +27,7 @@ class Datacord {
     this.check(item);
     try{
     const data = (await axios.get(`${this.databaseURI}?tag=${typeof item == 'string' ? item : item?.tag}`)).data;
+    if(data?.message) throw new Error(`${data?.message}`);
     return data;
     }catch(e) {
         throw new Error(`APIError: ${e.message}`)
@@ -69,3 +71,4 @@ function isBrowser() {
 }
 
 module.exports = Datacord;
+module.exports.Model = require('./utils/model');
